@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>WYSIWYG EDITOR</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script type="text/javascript" src="editor.js" ></script>
+	</head>
+	<body>
+	
+		<div id="editor">
+			<input class="title" placeholder="Title"/>
+			<div class="menu-panel">
+				<select onclick="execCmd('fontName' , this.value)">
+					<option value="Times New Roman">Times</option>
+					<option value="Arial">Arial</option>
+					<option value="Comic Sans MS" >Comic</option>
+				</select>
+				<button onclick="execCmd('undo')"><i class="fa  fa-undo" aria-hidden="true"></i></button>
+				<button onclick="execCmd('redo')"><i class="fa  fa-repeat" aria-hidden="true"></i></button>
+				<button onclick="execCmd('bold')"><i class="fa fa-bold" aria-hidden="true"></i></button>
+				<button onclick="execCmd('italic')"><i class="fa fa-italic" aria-hidden="true"></i></button>
+				<button onclick="execCmd('strikethrough')"><i class="fa fa-strikethrough" aria-hidden="true"></i></button>
+				<button onclick="execCmd('subscript')"><i class="fa fa-subscript" aria-hidden="true"></i></button>
+				<button onclick="execCmd('superscript')"><i class="fa fa-superscript" aria-hidden="true"></i></button>
+				<button onclick="execCmd('indent')"><i class="fa fa-indent" aria-hidden="true"></i></button>
+				<button onclick="execCmd('outdent')"><i class="fa fa-dedent" aria-hidden="true"></i></button>
+				<button onclick="execCmd('insertOrderedList')"><i class="fa fa-list" aria-hidden="true"></i></button>
+				<button onclick="execCmd('insertUnorderedList')"><i class="fa fa-list-ul" aria-hidden="true"></i></button>
+				<button onclick="execCmd('createLink' , prompt('Enter the Link', ''))"><i class="fa fa-link" aria-hidden="true"></i></button>
+				<button onclick="execCmd('justifyLeft')"><i class="fa fa-align-left" aria-hidden="true"></i></button>
+				<button onclick="execCmd('justifyRight')"><i class="fa fa-align-right" aria-hidden="true"></i></button>
+				<button onclick="execCmd('justifyFull')"><i class="fa fa-align-justify" aria-hidden="true"></i></button>
+				<button onclick="execCmd('justifyCenter')"><i class="fa fa-align-center" aria-hidden="true"></i></button>
+				<button onclick="execCmd('underline')"><i class="fa fa-underline" aria-hidden="true"></i></button>
+				<button onclick="execCmd('insertImage' ,prompt('Give the image link', '') )"><i class="fa fa-file-image-o" aria-hidden="true"></i></button>
+				<button onclick="execCmd('increaseFontSize')"><i class="fa fa-font" aria-hidden="true"></i></button>
+				<button onclick="execCmd('decreaseFontSize')"><i class="fa fa-font" style="font-size:20px;" aria-hidden="true"></i></button>
+				<button onclick="execCmd('cut')"><i class="fa fa-cut" aria-hidden="true"></i></button>
+				<button onclick="execCmd('paste')"><i class="fa fa-copy" aria-hidden="true"></i></button>
+				<button onclick="execCmd('insertParagraph')"><i class="fa fa-paragraph" aria-hidden="true"></i></button>
+				<span class="fa fa-paint-brush" aria-hidden="true"><input onclick="execCmd('foreColor' , this.value)"  type="color" /></span>
+				<button onclick="execCmd('toggleCode')"><i class="fa fa-code" aria-hidden="true"></i></button>
+			</div>	
+			<iframe id="richTextArea"></iframe>
+		</div>
+		
+
+	</body>
+</html>

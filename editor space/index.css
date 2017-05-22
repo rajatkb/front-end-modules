@@ -1,0 +1,87 @@
+#editor{
+	min-width: 270px;
+	width: 80%;
+	margin: auto;
+	text-align: justify;
+	padding: 5px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 350px rgba(0,0,0,0.5);
+
+}
+
+#editor *:focus{
+	outline: none;
+	
+}
+
+#editor .title{
+	width: 100%;
+	margin: 24px auto;
+	line-height: 48px;
+	font-size: 32px;
+	box-shadow: inset 1px 1px 4px rgba(0,0,0,0.4);
+	border:1px solid grey ;
+	border-radius: 5px;
+	padding: 0px 10px;
+	box-sizing: border-box;
+}
+
+#editor .menu-panel{
+	width:100%;
+	margin-bottom: 24px;
+}
+
+#editor .menu-panel button{
+	height: 100%;
+	margin: 2px;
+	font-size: 1.5em;
+	border-radius: 5px;
+	background-color: white;
+	border : 1px solid black;
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+}
+
+#editor .menu-panel select{
+	height: 100%;
+	margin: 2px;
+	font-size: 1.5em;
+	border-radius: 5px;
+	background-color: white;
+	border : 1px solid black;
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+	padding: 1px;
+}
+
+#editor .menu-panel span{
+	height: 100%;
+	margin: 2px;
+	font-size: 1.5em;
+	border-radius: 5px;
+	background-color: white;
+	border : 1px solid black;
+	box-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+	padding: 1px;
+}
+
+#editor .menu-panel input{
+	border-radius: 2px;
+	background-color: white;
+	border : none;
+	margin:0px 0px 0px 7px;
+}
+
+
+#editor .menu-panel button:active{
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+#editor iframe{
+	width: 100%;
+	border-radius: 2px;
+	border: 1px solid black;
+	box-shadow: inset 2px 2px 10px rgba(0,0,0,0.3);
+	padding: 5px;
+	box-sizing: border-box;
+	height: 60vh;
+}
+
